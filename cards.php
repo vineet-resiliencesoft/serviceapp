@@ -1,4 +1,4 @@
-><!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -13,19 +13,40 @@
  .cards{ margin: 5%;
     display: flex;
     justify-content: space-between;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 40%;
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    background: #f44336;
+    transition: 1s;
+  }
+  
+  .container {
+    padding: 2px 16px;
+  }
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px; 
+  }
+  img {
+    border-radius: 5px 5px 0 0;
   }
   </style>
 </head>
 <body>
-    <section style="display: flex"; justify-content:space-between; >
-  <!--  <div class="card" style="width: 18rem;">
-  <img src="https://www.cleansweepofamerica.com/wp-content/uploads/2020/10/office-cleaning-service.jpeg" alt="cleaning" class="card-img-top" alt="cleaning">
+    <section style="display: flex; align-items:center; justify-content:space-between;" >
+   <div class="card" style="width: 50%; height:25% margin: top 150px; margin-left: 30px;margin-right: 30px;">
+  <img src="https://www.cleansweepofamerica.com/wp-content/uploads/2020/10/office-cleaning-service.jpeg" alt="cleaning" class="card-img-top" alt="cleaning" >
   <div class="card-body">
         <h5 class="card-title">Cleaning</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <p class="card-text" >This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
   </div>
 </div>
- <div class="card mb-3" style="max-width: 540px;">
+<!-- <div class="card mb-3" style="max-width: 540px;">
   <div class="row no-gutters">
     <div class="col-md-4">
       <img src="https://www.cleansweepofamerica.com/wp-content/uploads/2020/10/office-cleaning-service.jpeg" alt="cleaning">
@@ -39,7 +60,7 @@
     </div>
   </div>
 </div> -->
-<div class="row row-cols-1 row-cols-md-2">
+<div class="row row-cols-1 row-cols-md-2" style="width:70%; height:70%; margin: top 50px; " >
   <div class="col mb-4">
     <div class="card">
       <img src="https://media.istockphoto.com/photos/auto-mechanic-working-on-car-engine-in-mechanics-garage-repair-picture-id1284285171?k=20&m=1284285171&s=612x612&w=0&h=ND-oIfzIIVJuHI-Z_YGULQo7ApGXHvEDUsmmxmTnYNw=" class="card-img-top" alt="Automotive">
